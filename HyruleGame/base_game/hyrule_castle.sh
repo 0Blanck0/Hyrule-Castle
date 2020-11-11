@@ -191,34 +191,34 @@ function Run_fight {
 
 	    #Vider le buffer
 	    if test -t 0; then
-		while read -t 0 notused; do
-		    read input
-		done
+		    while read -t 0 notused; do
+		        read input
+		    done
 	    fi
 	    
 	    read player_action
 
 	    if [[ ($player_action == Attack) || ($player_action == attack) ]]; then
-		player_action=1
+		    player_action=1
 	    elif [[ ($player_action == Heal) || ($player_action == heal) ]]; then
-		player_action=2
+		    player_action=2
 	    elif [[ $player_action == OverPower ]]; then
-		 mob_heal=1
-		 player_action=1
+		    mob_heal=1
+		    player_action=1
 	    fi
 	    
 	    if [[ $player_action -eq 1 ]]; then
-		Fight_HP_Editor -attack
-		Display_HP_Fight $mob_name $player_name 1
-		Display_text_fight -attack
-		loop=0
-		sleep 3
+		    Fight_HP_Editor -attack
+		    Display_HP_Fight $mob_name $player_name 1
+		    Display_text_fight -attack
+		    loop=0
+		    sleep 3
 	    elif [[ $player_action -eq 2 ]]; then
-		Fight_HP_Editor -heal
-		Display_HP_Fight $mob_name $player_name 1
-		Display_text_fight -heal
-		loop=0
-		sleep 3
+		    Fight_HP_Editor -heal
+		    Display_HP_Fight $mob_name $player_name 1
+		    Display_text_fight -heal
+		    loop=0
+		    sleep 3
 	    fi
 	    
 	done
