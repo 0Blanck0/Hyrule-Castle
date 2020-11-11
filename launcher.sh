@@ -19,15 +19,15 @@ fi
 clear
 
 if [[ $player_action == 1 ]]; then
-    cd base_game/
+    cd HyruleGame/base_game/
     echo "Basic game load..."
     sleep 2
 elif [[ $player_action == 2 ]]; then
-    cd dynamic_characters/
+    cd HyruleGame/dynamic_characters/
     echo "Dynamic mode load..."
     sleep 2
 else
-    cd level_and_experience/
+    cd HyruleGame/level_and_experience/
     echo "Level mode load..."
     sleep 2
 fi
