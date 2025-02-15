@@ -1,17 +1,54 @@
-# Hyrule-Castle
+# Hyrule Castle
 
-Hyrule Castle est un jeu textuel basic ayant pour seul but de battre le boss de fin.
-Ce jeu est fait avec le langage bash et fonctionne sous linux (créer sur la distribution Linux debian 4.19.0-12-amd64).
-Ce jeu a été dévelloper en 36H dans le cadre de la "piscine" de l'école l'Etna (L’École des Technologies Numériques Avancées) et se découpe en 3 partie:
+## Overview
+Hyrule Castle is a text-based game developed in Bash, designed to provide an engaging RPG-style adventure where players must defeat the final boss. The game was built and tested on Debian 4.19.0-12-amd64 and is compatible exclusively with Linux operating systems.
 
-- Le "Base Game" qui est léttéralement la base du jeu ou plutôt le jeu demander au départ,
-- La partie "Dynamic Characters" qui contien le jeu de base et un mode joueur aléatoire (le jeu va sélectionner un personnage pour le joueur de façons aléatoire),
-- Et la partie "Level and Experience" qui contien le jeu de base, le mode joueur aléatoire et un mode supplémentaire permetant de gagner de l'expérience et des niveau qui vont impacter drectement votre joueur (augmentation des stats).
+## Features
+The game consists of three main modes:
 
-Date de création: 23 Septembre 2020 9:00
+1. **Base Game** – A structured adventure where players follow a predetermined storyline.
+2. **Dynamic Characters** – Players are assigned a random character, increasing replayability.
+3. **Leveling System** – Introduces experience points and character progression that affect gameplay mechanics.
 
-Date de mise en ligne GitHub (public): 01/11/2020
+## Requirements
+- Linux operating system (tested on Debian 4.19.0-12-amd64)
+- Bash shell interpreter
 
-Dernière modification dans le cadre scolaire: 24 Septembre 2020 12:00
+## Installation
+To install and run Hyrule Castle, follow these steps:
 
-Dernière modification dans un cadre personnel: 11 Novembre 2020 23:13
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/0Blanck0/Hyrule-Castle.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Hyrule-Castle
+   ```
+
+## Usage
+To start the game, execute the following command:
+
+```bash
+./launcher.sh
+```
+
+If necessary, grant execution permissions:
+
+```bash
+chmod +x launcher.sh
+```
+
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## Acknowledgments
+Developed as part of the programming curriculum at [ETNA](https://etna.io/) (École des Technologies Numériques Avancées). Special thanks to mentors and fellow students for their valuable support and feedback.
+
+## Important Dates
+- **Project Initiation:** September 23, 2020
+- **GitHub Release:** November 1, 2020
+- **Last School Modification:** September 24, 2020
+- **Last Personal Update:** October 11, 2020
+
+
